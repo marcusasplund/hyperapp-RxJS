@@ -1,0 +1,22 @@
+#console-log-div {
+  background-color: #272822;
+  color: #F92672;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  margin: 20px 10px 10px;
+  white-space: pre;
+  border: 1px solid black;
+}
+
+.log {
+  color: #efefef;
+}
+
+.error {
+  color: brightpink;
+}
+
+.warn {
+  color: orange;
+}
