@@ -5,7 +5,7 @@ import {showConsole} from '../views/show-console'
 
 export const view = (model, actions) =>
   <div class='container'>
-    <h2>hyperapp rxjs <a href=''><small>source</small></a></h2>
+    <h2>hyperapp RxJS <a href='https://github.com/marcusasplund/hyperapp-RxJS'><small>source</small></a></h2>
      <hr/>
       <h3>{model.count}</h3>
       {addButton(actions)}
