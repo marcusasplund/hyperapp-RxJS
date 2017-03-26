@@ -1,4 +1,4 @@
-# todo
+# hyperapp with RxJS
 
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
 
@@ -6,7 +6,9 @@
 
 [hyperapp.js](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
 
-# [demo](https://pap.as/hyperapp/RxJS/)
+From [this excellent article](https://glebbahmutov.com/blog/pure-programming-with-hyper-app/)
+
+# [demo](https://rift-blue.glitch.me/)
 
 ## installation
 
