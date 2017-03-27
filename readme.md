@@ -8,7 +8,7 @@
 
 From [this excellent article](https://glebbahmutov.com/blog/pure-programming-with-hyper-app/)
 
-# [demo](https://rift-blue.glitch.me/)
+# [demo](https://pap.as/hyperapp/RxJS/)
 
 ## installation
 
