@@ -14,6 +14,8 @@ From [this excellent article](https://glebbahmutov.com/blog/pure-programming-wit
 
 ````
     $ git clone https://github.com/marcusasplund/hyperapp-RxJS.git
+    
+    $ cd hyperapp-RxJS
 
     $ yarn OR $ npm install
 
