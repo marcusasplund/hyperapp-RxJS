@@ -21,3 +21,4 @@ From [this excellent article](https://glebbahmutov.com/blog/pure-programming-wit
 
     $ npm start
 ````
+Open up application at http://localhost:8080/ in browser
