@@ -19,7 +19,7 @@ const logWarn = console.warn
 
 const pushLogs = (a, type) => {
   let args = Array.prototype.slice.call(a)    
-  for (var i=0; i < args.length; i++) {
+  for (var i = 0; i < args.length; i++) {
     model.logs.push({
       message: args[i],
       type: type
