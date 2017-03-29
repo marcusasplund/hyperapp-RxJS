@@ -6,7 +6,7 @@ import {showConsole} from '../views/show-console'
 
 export const view = (model, actions) =>
   <div class='container'>
-    {headerSection(model)}
+    {headerSection()}
     {addButton(actions)}
     {subButton(actions)}
     {showConsole()}
