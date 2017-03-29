@@ -2,8 +2,12 @@ import '../css/show-console.css'
 import {h} from 'hyperapp'
 
 export const showConsole = () =>
-  <fieldset id='console-log-div'>{ model.logs.map((item) => 
-                                  createLogNode(item))}</fieldset>
+  <fieldset id='console-log-div'>
+    {
+      model.logs.map((item) => 
+        createLogNode(item))
+    }
+  </fieldset>
 
 const model = {
   logs: []
