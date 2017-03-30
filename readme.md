@@ -3,7 +3,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
 [![Build status](https://travis-ci.org/marcusasplund/hyperapp-RxJS.svg?branch=master)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
 [![dependencies](https://david-dm.org/marcusasplund/hyperapp-RxJS.svg)](https://david-dm.org/marcusasplund/hyperapp-RxJS)
-[![GitHub version](https://badge.fury.io/gh/marcusasplund%2Fhyperapp-RxJS.svg)](https://badge.fury.io/gh/marcusasplund%2Fhyperapp-RxJS)
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
