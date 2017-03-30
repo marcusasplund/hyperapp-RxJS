@@ -1,7 +1,7 @@
 # hyperapp with RxJS
 
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
-
+[![Build status](https://travis-ci.org/marcusasplund/hyperapp-RxJS.svg?branch=master)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 [hyperapp.js](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
