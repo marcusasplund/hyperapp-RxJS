@@ -1,6 +1,8 @@
 # hyperapp with RxJS
 
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
+[![Build status](https://img.shields.io/travis/marcusasplund/hyperapp-RxJS.svg)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
+[![dependencies](https://img.shields.io/david/marcusasplund/hyperapp-RxJS.svg)](https://david-dm.org/marcusasplund/hyperapp-RxJS)
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -8,14 +10,17 @@
 
 From [this excellent article](https://glebbahmutov.com/blog/pure-programming-with-hyper-app/)
 
-# [demo](https://rift-blue.glitch.me/)
+# [demo](https://pap.as/hyperapp/RxJS/)
 
 ## installation
 
 ````
     $ git clone https://github.com/marcusasplund/hyperapp-RxJS.git
+    
+    $ cd hyperapp-RxJS
 
     $ yarn OR $ npm install
 
     $ npm start
 ````
+Open up application at http://localhost:8080/ in browser
