@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 import {headerSection} from '../views/header-section'
 import {addButton} from '../views/add-button'

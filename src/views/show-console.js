@@ -1,10 +1,10 @@
-import '../css/show-console.css'
+/* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
 export const showConsole = () =>
   <fieldset id='console-log-div'>
     {
-      model.logs.map((item) => 
+      model.logs.map((item) =>
         createLogNode(item))
     }
   </fieldset>
@@ -18,7 +18,7 @@ const logError = console.error
 const logWarn = console.warn
 
 const pushLogs = (a, type) => {
-  let args = Array.prototype.slice.call(a)    
+  let args = Array.prototype.slice.call(a)
   for (var i = 0; i < args.length; i++) {
     model.logs.push({
       message: args[i],
@@ -42,5 +42,5 @@ console.warn = function () {
   pushLogs(arguments, 'warn')
 }
 
-const createLogNode = (item) => 
+const createLogNode = (item) =>
   <div class={item.type}>{item.message}</div>
