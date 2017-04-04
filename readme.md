@@ -12,15 +12,39 @@ From [this excellent article](https://glebbahmutov.com/blog/pure-programming-wit
 
 # [demo](https://pap.as/hyperapp/RxJS/)
 
+
 ## installation
 
-````
-    $ git clone https://github.com/marcusasplund/hyperapp-RxJS.git
-    
-    $ cd hyperapp-RxJS
-
+````bash
+    $ git clone https://github.com/marcusasplund/hyperapp-todo-simple.git
+ 
+    $ cd hyperapp-todo-simple
+ 
     $ yarn OR $ npm install
 
     $ npm start
 ````
-Open up application at http://localhost:8080/ in browser
+
+Open up application at http://localhost:4000/ in browser
+
+## build a release
+
+````bash
+    $ npm run build
+
+````
+This will generate a release directory with your minified/rev'd assets.
+
+
+## serve static
+
+````bash
+    $ npm run serve
+
+````
+
+This will use serve to statically serve your app from the release directory.
+
+## Credits
+
+The rollup and fly config is based on https://github.com/tzellman/hyperapp-boilerplate
