@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
-import {headerSection} from '../views/header-section'
-import {addButton} from '../views/add-button'
-import {subButton} from '../views/sub-button'
-import {showConsole} from '../views/show-console'
+import {HeaderSection} from '../views/header-section'
+import {AddButton} from '../views/add-button'
+import {SubButton} from '../views/sub-button'
+import {ShowConsole} from '../views/show-console'
 
 export const view = (model, actions) =>
   <div class='container'>
-    {headerSection()}
-    {addButton(actions)}
-    {subButton(actions)}
-    {showConsole()}
+    <HeaderSection />
+    <AddButton actions={actions} />
+    <SubButton actions={actions} />
+    <ShowConsole />
   </div>

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const headerSection = () =>
+export const HeaderSection = () =>
   <header>
     <h2>hyperapp RxJS </h2>
     <p>

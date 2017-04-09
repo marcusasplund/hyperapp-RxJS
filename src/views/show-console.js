@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const showConsole = () =>
+export const ShowConsole = () =>
   <fieldset id='console-log-div'>
     {
       model.logs.map((item) =>
