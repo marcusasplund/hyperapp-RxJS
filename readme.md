@@ -17,7 +17,7 @@ From [this excellent article](https://glebbahmutov.com/blog/pure-programming-wit
 ## installation
 
 ````bash
-    $ git clone https://github.com/marcusasplund/hyperapp-todo-simple.git
+    $ git clone https://github.com/marcusasplund/hyperapp-RxJS.git
  
     $ cd hyperapp-todo-simple
  
