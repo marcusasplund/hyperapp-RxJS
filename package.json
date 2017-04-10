@@ -9,7 +9,7 @@
     "preserve": "npm run build",
     "serve": "serve release -s -p 4000"
   },
-  "main": "src/index.js",
+  "main": "src/app/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/marcusasplund/hyperapp-RxJS.git"
