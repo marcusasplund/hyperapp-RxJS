@@ -4,6 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
 [![Build status](https://img.shields.io/travis/marcusasplund/hyperapp-RxJS.svg)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
 [![dependencies](https://img.shields.io/david/marcusasplund/hyperapp-RxJS.svg)](https://david-dm.org/marcusasplund/hyperapp-RxJS)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2f1636aa184449439ed07ab0f850444b)](https://www.codacy.com/app/marcusasplund/hyperapp-RxJS?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marcusasplund/hyperapp-RxJS&amp;utm_campaign=Badge_Grade)
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
