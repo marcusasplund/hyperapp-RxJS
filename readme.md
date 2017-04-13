@@ -1,5 +1,6 @@
 # hyperapp with RxJS
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2f1636aa184449439ed07ab0f850444b)](https://www.codacy.com/app/marcusasplund/hyperapp-RxJS?utm_source=github.com&utm_medium=referral&utm_content=marcusasplund/hyperapp-RxJS&utm_campaign=badger)
 [![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/hyperapp-RxJS.svg)](https://greenkeeper.io/)
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
 [![Build status](https://img.shields.io/travis/marcusasplund/hyperapp-RxJS.svg)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
