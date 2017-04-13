@@ -1,10 +1,10 @@
 import {app} from 'hyperapp'
 import {actions} from './actions'
-import {model} from './model'
+import {store} from './store'
 import {view} from './view'
 
 app({
   actions,
-  model,
+  store,
   view
 })

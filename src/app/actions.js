@@ -17,16 +17,16 @@ delayedClicks$.subscribe(add => {
 })
 
 export const actions = {
-  add: model => ({
-    count: ++model.count
+  add: store => ({
+    count: ++store.count
   }),
-  scheduleAdd (model, _, actions) {
+  scheduleAdd (store, _, actions) {
     delayedClicks$.next(actions.add)
   },
-  scheduleSub (model, _, actions) {
+  scheduleSub (store, _, actions) {
     delayedClicks$.next(actions.sub)
   },
-  sub: model => ({
-    count: --model.count
+  sub: store => ({
+    count: --store.count
   })
 }

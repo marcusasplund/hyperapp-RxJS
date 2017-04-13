@@ -5,7 +5,7 @@ import {AddButton} from '../views/add-button'
 import {SubButton} from '../views/sub-button'
 import {ShowConsole} from '../views/show-console'
 
-export const view = (model, actions) =>
+export const view = (store, actions) =>
   <div class='container'>
     <HeaderSection />
     <AddButton actions={actions} />
