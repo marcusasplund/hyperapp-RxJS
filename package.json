@@ -36,7 +36,7 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^1.1.1",
-    "serve": "^5.1.2" 
+    "serve": "^5.1.2"
   },
   "dependencies": {
     "hyperapp": "^0.8.1",
