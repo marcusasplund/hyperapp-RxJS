@@ -5,9 +5,10 @@ import {AddButton} from './add-button'
 import {SubButton} from './sub-button'
 import {ShowConsole} from './show-console'
 
-export const view = (store, actions) =>
+export const view = (state, actions) =>
   <div class='container'>
     <HeaderSection />
+    <h1>{state}</h1>
     <AddButton actions={actions} />
     <SubButton actions={actions} />
     <ShowConsole />
