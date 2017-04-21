@@ -27,6 +27,6 @@ export const actions = {
     delayedClicks$.next(actions.sub)
   },
   sub: state => ({
-    count: --store.count
+    count: --state.count
   })
 }
