@@ -1,10 +1,10 @@
 import {app} from 'hyperapp'
 import {actions} from './actions'
-import {store} from './store'
+import {state} from './state'
 import {view} from '../views/'
 
 app({
   actions,
-  store,
+  state,
   view
 })
