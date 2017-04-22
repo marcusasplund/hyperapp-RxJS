@@ -1,7 +1,15 @@
 
-@import "normalize";
-@import "milligram";
-@import "show-console";
+@import 'normalize';
+@import 'Color';
+@import 'Base';
+@import 'Button';
+@import 'Code';
+@import 'Divider';
+@import 'Grid';
+@import 'Link';
+@import 'Spacing';
+@import 'Typography';
+@import 'show-console';
 
 header {
   padding-top: 5rem;
