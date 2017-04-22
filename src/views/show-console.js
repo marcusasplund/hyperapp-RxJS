@@ -4,8 +4,8 @@ import {h} from 'hyperapp'
 export const ShowConsole = () =>
   <fieldset id='console-log-div'>
     {
-      logs.map((logitem) =>
-        createLogNode(logitem))
+      logs.map((logitem, i) =>
+        createLogNode(logitem, i))
     }
   </fieldset>
 
@@ -14,13 +14,15 @@ const logs = []
 const log = console.log
 const logError = console.error
 const logWarn = console.warn
+let index = 0
 
 const pushLogs = (a, type) => {
   let args = Array.prototype.slice.call(a)
   for (var i = 0; i < args.length; i++) {
-    logs.push({
+    logs.unshift({
       message: args[i],
-      type: type
+      type: type,
+      index: ++index
     })
   }
 }
@@ -40,7 +42,7 @@ console.warn = function () {
   pushLogs(arguments, 'warn')
 }
 
-const createLogNode = (logitem) =>
+const createLogNode = (logitem, i) =>
   <div class={logitem.type}>
-    {logitem.message}
+    {logitem.index + '. '}{logitem.message}
   </div>
