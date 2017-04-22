@@ -66,7 +66,7 @@ export async function release (fly) {
   await fly.source(`${target}/*.js`).uglify({
     compress: {
       conditionals: 1,
-      drop_console: 1,
+      drop_console: 0,
       comparisons: 1,
       join_vars: 1,
       booleans: 1,
