@@ -11,6 +11,8 @@
 
 [hyperapp.js](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
 
+Offline support with service worker
+
 From [this excellent article](https://glebbahmutov.com/blog/pure-programming-with-hyper-app/)
 
 # [demo](https://pap.as/hyperapp/RxJS/)
@@ -20,9 +22,9 @@ From [this excellent article](https://glebbahmutov.com/blog/pure-programming-wit
 
 ````bash
     $ git clone https://github.com/marcusasplund/hyperapp-RxJS.git
- 
+
     $ cd hyperapp-todo-simple
- 
+
     $ yarn OR $ npm install
 
     $ npm start
