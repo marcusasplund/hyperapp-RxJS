@@ -5,7 +5,7 @@
   "scope": "./",
   "display": "fullscreen",
   "start_url": "./",
-  "short_name": "ToDo",
+  "short_name": "RxJS",
   "theme_color": "white",
   "description": "hyperapp test with RxJS",
   "orientation": "portrait",
