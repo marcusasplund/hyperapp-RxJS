@@ -13,4 +13,3 @@ export const view = (state, actions) =>
     <SubButton actions={actions} />
     <ShowConsole />
   </div>
-  

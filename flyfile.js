@@ -83,7 +83,7 @@ export async function release (fly) {
     }
   }).target(target)
   await fly.source(`${target}/**/*`).rev({
-    ignores: ['.html', '.png', '.svg', '.ico', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
+    ignores: ['.html', '.png', '.svg', '.xml', '.ico', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await fly.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
   await fly.serial(['cache'])
@@ -98,7 +98,7 @@ export async function watch (fly) {
   // start server
   browserSync({
     server: target,
-    logPrefix: 'hyperapp',
+    logPrefix: 'hyperapp-RxJS',
     port: process.env.PORT || 4000,
     middleware: [
       require('connect-history-api-fallback')()
