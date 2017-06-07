@@ -10,23 +10,23 @@ const delayedClicks$ = (new Subject())
 .concatMap(delay$)
 
 const started = window.performance.now()
-delayedClicks$.subscribe(add => {
+delayedClicks$.subscribe(callback => {
   const time = window.performance.now() - started
   console.log(`executing at ${time.toFixed(2)} ms`)
-  add()
+  callback()
 })
 
 export const actions = {
-  add: state => ({
+  add: (state, actions, e) => ({
     count: ++state.count
   }),
-  scheduleAdd (state, _, actions) {
+  scheduleAdd (state, actions, e) {
     delayedClicks$.next(actions.add)
   },
-  scheduleSub (state, _, actions) {
+  scheduleSub (state, actions, e) {
     delayedClicks$.next(actions.sub)
   },
-  sub: state => ({
+  sub: (state, actions, e) => ({
     count: --state.count
   })
 }
