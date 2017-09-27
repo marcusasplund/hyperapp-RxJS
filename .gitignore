@@ -5,3 +5,7 @@ npm-debug.log*
 
 # Dependency directory
 node_modules
+
+# Compiled
+dist
+release
