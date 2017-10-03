@@ -32,7 +32,7 @@ export async function copyStaticAssets (task, o) {
 }
 
 export async function js (task) {
-  await task.source('src/app/index.js').rollup({
+  await task.source('src/index.js').rollup({
     rollup: {
       plugins: [
         require('rollup-plugin-buble')({jsx: 'h'}),
@@ -58,7 +58,12 @@ export async function styles (task) {
   await task.source(src.scss).sass({
     outputStyle: 'compressed',
     includePaths: []
-  }).autoprefixer().target(`${target}`)
+  })
+  .postcss({
+    plugins: [require('autoprefixer')({
+      browsers: ['last 2 versions']
+    })]
+  }).target(`${target}`)
 }
 
 export async function build (task) {

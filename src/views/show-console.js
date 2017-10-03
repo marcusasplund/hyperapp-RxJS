@@ -1,6 +1,12 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
+const log = console.log
+const logError = console.error
+const logWarn = console.warn
+let index = 0
+let logs = []
+
 export const ShowConsole = () =>
   <fieldset id='console-log-div'>
     {
@@ -8,13 +14,6 @@ export const ShowConsole = () =>
         createLogNode(logitem, i))
     }
   </fieldset>
-
-const logs = []
-
-const log = console.log
-const logError = console.error
-const logWarn = console.warn
-let index = 0
 
 const pushLogs = (a, type) => {
   let args = Array.prototype.slice.call(a)
