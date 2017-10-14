@@ -14,15 +14,6 @@ const src = {
   ]
 }
 
-export async function cache (task) {
-  await task.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
-    .precache({
-      cacheId: 'hyperapp-RxJS',
-      stripPrefix: 'release/'
-    })
-    .target('release')
-}
-
 export async function clean (task) {
   await task.clear([target, releaseTarget])
 }
@@ -86,7 +77,6 @@ export async function release (task) {
     ignores: ['.html', '.png', '.svg', '.xml', '.ico', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await task.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
-  await task.serial(['cache'])
 }
 
 export async function watch (task) {

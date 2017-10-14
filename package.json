@@ -30,7 +30,6 @@
     "@taskr/watch": "^1.1.0",
     "autoprefixer": "^7.1.4",
     "browser-sync": "^2.18.13",
-    "fly-precache": "^2.1.0",
     "fly-rollup": "^2.1.0",
     "rollup": "^0.50.0",
     "rollup-plugin-buble": "^0.16.0",
@@ -41,7 +40,7 @@
     "taskr": "^1.1.0"
   },
   "dependencies": {
-    "hyperapp": "^0.12.1",
+    "hyperapp": "^0.15.1",
     "rxjs": "^5.4.3"
   }
 }
