@@ -10,7 +10,7 @@
 
 [hyperapp.js](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
 
-~~ Offline support with service worker* ~~
+~~Offline support with service worker*~~
 I have now removed pre cache and worker; it messed up console messages when running locally
 
 From [this excellent article](https://glebbahmutov.com/blog/pure-programming-with-hyper-app/)
