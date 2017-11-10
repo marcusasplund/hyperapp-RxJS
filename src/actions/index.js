@@ -18,16 +18,16 @@ delayedClicks$.subscribe(callback => {
 })
 
 export const actions = {
-  add: (state, actions, e) => ({
+  add: state => ({
     count: ++state.count
   }),
-  scheduleAdd (state, actions, e) {
+  scheduleAdd: (state, actions) => {
     delayedClicks$.next(actions.add)
   },
-  scheduleSub (state, actions, e) {
+  scheduleSub: (state, actions) => {
     delayedClicks$.next(actions.sub)
   },
-  sub: (state, actions, e) => ({
+  sub: state => ({
     count: --state.count
   })
 }

@@ -1,6 +1,10 @@
 const browserSync = require('browser-sync')
-
 let isWatching = false
+let isServer = false
+
+export async function reload (task) {
+  isWatching && isServer && browserSync.reload()
+}
 
 // some source/dest consts
 const target = 'dist'
@@ -12,6 +16,15 @@ const src = {
     'src/static/**/*.*',
     'src/*.html'
   ]
+}
+
+export async function cache (task) {
+  await task.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
+    .precache({
+      cacheId: 'hyperapp-RxJS',
+      stripPrefix: 'release/'
+    })
+    .target('release')
 }
 
 export async function clean (task) {
@@ -77,6 +90,7 @@ export async function release (task) {
     ignores: ['.html', '.png', '.svg', '.xml', '.ico', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await task.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
+  await task.serial(['cache'])
 }
 
 export async function watch (task) {
@@ -90,12 +104,9 @@ export async function watch (task) {
     server: target,
     logPrefix: 'hyperapp-RxJS',
     port: process.env.PORT || 4000,
+    cors: false,
     middleware: [
       require('connect-history-api-fallback')()
     ]
   })
-}
-
-export async function reload (task) {
-  isWatching && browserSync.reload()
 }

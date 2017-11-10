@@ -9,6 +9,7 @@ app({
   state,
   view
 })
+
 // Register service worker if not on localhost
 const local = window.location.host.startsWith('localhost')
 
