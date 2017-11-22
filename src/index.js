@@ -8,6 +8,8 @@ app({
   actions,
   state,
   view
-})
+},
+  document.getElementById('app')
+)
 
 registerWorker()
