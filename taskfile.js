@@ -55,11 +55,7 @@ const rollupInputOptions = {
   input: './src/index.js',
   plugins: [
     require('rollup-plugin-buble')({
-      jsx: 'h',
-      transforms: {
-        dangerousForOf: true
-      },
-      objectAssign: 'Object.assign'
+      jsx: 'h'
     }),
     require('rollup-plugin-commonjs')({
       include: 'node_modules/**'
