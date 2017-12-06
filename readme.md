@@ -1,4 +1,4 @@
-# hyperapp with RxJS
+# Hyperapp with RxJS
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/hyperapp-RxJS.svg)](https://greenkeeper.io/)
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
@@ -8,7 +8,7 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[hyperapp.js](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
+[Hyperapp](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
 
 Offline support with service worker
 
