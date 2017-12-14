@@ -1,3 +1,4 @@
+
 import {Subject} from 'rxjs/Subject'
 import {Observable} from 'rxjs/Observable'
 import 'rxjs/add/operator/delay'
@@ -17,17 +18,4 @@ delayedClicks$.subscribe(callback => {
   callback()
 })
 
-export const actions = {
-  add: () => state => ({
-    count: ++state.count
-  }),
-  sub: () => state => ({
-    count: --state.count
-  }),
-  scheduleAdd: e => state => actions => {
-    delayedClicks$.next(actions.add)
-  },
-  scheduleSub: e => state => actions => {
-    delayedClicks$.next(actions.sub)
-  }
-}
+export {delayedClicks$}

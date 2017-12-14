@@ -5,7 +5,7 @@ import {AddButton} from './add-button'
 import {SubButton} from './sub-button'
 import {ShowConsole} from './show-console'
 
-export const view = state => actions =>
+export const view = ({ state, actions }) =>
   <div class='container'>
     <HeaderSection />
     <h1>{state.count}</h1>
