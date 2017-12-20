@@ -1,6 +1,6 @@
 {
   "name": "hyperapp-RxJS",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "license": "MIT",
   "scripts": {
@@ -41,7 +41,7 @@
     "workbox-build": "2.1.2"
   },
   "dependencies": {
-    "hyperapp": "0.17.1",
+    "hyperapp": "0.18.0",
     "rxjs": "5.5.2"
   }
 }
