@@ -1,7 +1,6 @@
 import {app} from 'hyperapp'
 import {view} from './views/'
 import {delayedClicks$} from './utils/delayed-click'
-import {registerWorker} from './utils/register-worker'
 
 const state = {
   count: 0
@@ -22,5 +21,3 @@ const actions = {
 }
 
 window.main = app(state, actions, view, document.getElementById('app'))
-
-registerWorker()
