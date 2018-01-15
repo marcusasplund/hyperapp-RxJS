@@ -1808,9 +1808,9 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-hyperapp@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.0.0.tgz#b5962f928a3a55fc0f69e39eea511e942b97034e"
+hyperapp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-1.0.1.tgz#4acbe3c432709c7ec29fa320d9d2e54a47e6a17f"
 
 iconv-lite@0.4.19:
   version "0.4.19"
@@ -3254,9 +3254,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup@^0.52.1:
-  version "0.52.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.52.3.tgz#020d99fffe9619351e47b3894fd397c26f5e1bf6"
+rollup@^0.53.1:
+  version "0.53.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.53.4.tgz#f92ce56ee1d097ad5b6f13951bc80db5fef18113"
 
 run-async@^0.1.0:
   version "0.1.0"
