@@ -27,7 +27,7 @@ export async function cache () {
     cacheId: `${applicationId}`,
     globDirectory: `${releaseTarget}/`,
     swDest: `${releaseTarget}/sw.js`,
-    globPatterns: ['**/*.{js,html,css,png,jpg,gif,woff,woff2}']
+    globPatterns: ['*.{js,html,css,png,jpg,gif,woff,woff2}']
   })
     .then(() => {
       console.log('Service worker generated.')
@@ -55,7 +55,11 @@ const rollupInputOptions = {
   input: './src/index.js',
   plugins: [
     require('rollup-plugin-buble')({
-      jsx: 'h'
+      jsx: 'h',
+      transforms: {
+        dangerousForOf: true
+      },
+      objectAssign: 'Object.assign'
     }),
     require('rollup-plugin-commonjs')({
       include: 'node_modules/**'
