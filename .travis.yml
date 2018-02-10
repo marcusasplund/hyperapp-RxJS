@@ -2,12 +2,11 @@ language: node_js
 node_js:
   - "9"
   - "8"
-  - "6"
 
 sudo: false
 
 install:
-  - npm install
+  - yarn
 
 script:
-  - npm run build
+  - yarn build
