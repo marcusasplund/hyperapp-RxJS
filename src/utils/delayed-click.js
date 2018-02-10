@@ -8,7 +8,7 @@ import 'rxjs/add/observable/of'
 const delay$ = _ => Observable.of(_).delay(600)
 
 const delayedClicks$ = (new Subject())
-.concatMap(delay$)
+  .concatMap(delay$)
 
 const started = window.performance.now()
 
