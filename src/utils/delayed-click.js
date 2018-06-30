@@ -1,4 +1,4 @@
-import { Subject, Observable, of } from 'rxjs'
+import { Subject, of } from 'rxjs'
 import { delay, concatMap } from 'rxjs/operators'
 
 const delay$ = _ => of(_).pipe(delay(600))
