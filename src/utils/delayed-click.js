@@ -1,14 +1,9 @@
+import { Subject, of } from 'rxjs'
+import { delay, concatMap } from 'rxjs/operators'
 
-import {Subject} from 'rxjs/Subject'
-import {Observable} from 'rxjs/Observable'
-import 'rxjs/add/operator/delay'
-import 'rxjs/add/operator/concatMap'
-import 'rxjs/add/observable/of'
+const delay$ = _ => of(_).pipe(delay(600))
 
-const delay$ = _ => Observable.of(_).delay(600)
-
-const delayedClicks$ = (new Subject())
-  .concatMap(delay$)
+const delayedClicks$ = (new Subject()).pipe(concatMap(delay$))
 
 const started = window.performance.now()
 
@@ -18,4 +13,4 @@ delayedClicks$.subscribe(callback => {
   callback()
 })
 
-export {delayedClicks$}
+export { delayedClicks$ }
