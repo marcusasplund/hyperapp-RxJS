@@ -8,7 +8,7 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[Hyperapp](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/Reactive-Extensions/RxJS)
+[Hyperapp](https://github.com/hyperapp/hyperapp), test with [RxJS](https://github.com/reactivex/rxjs)
 
 Offline support with service worker
 

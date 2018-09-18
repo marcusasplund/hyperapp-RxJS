@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {h} from 'hyperapp'
+import { h } from 'hyperapp'
 
 const log = console.log
 const logError = console.error

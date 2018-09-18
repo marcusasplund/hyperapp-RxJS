@@ -1,6 +1,7 @@
-import {app} from 'hyperapp'
-import {view} from './views/'
-import {delayedClicks$} from './utils/delayed-click'
+import { app } from 'hyperapp'
+import { view } from './views/'
+import { delayedClicks$ } from './utils/delayed-click'
+import './styles/app.scss'
 
 const state = {
   count: 0

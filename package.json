@@ -1,13 +1,11 @@
 {
   "name": "hyperapp-RxJS",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "license": "MIT",
   "scripts": {
-    "build": "taskr build release",
-    "start": "taskr watch",
-    "preserve": "yarn run build",
-    "serve": "serve release -s -p 4000"
+    "start": "standard && parcel src/index.html -p 3000 --open",
+    "build": "standard && parcel build src/index.html -d build --public-url ./ && workbox generateSW"
   },
   "main": "src/index.js",
   "repository": {
@@ -19,29 +17,22 @@
   },
   "homepage": "https://github.com/marcusasplund/hyperapp-RxJS#readme",
   "devDependencies": {
-    "@taskr/clear": "^1.1.0",
-    "@taskr/concat": "^1.1.0",
-    "@taskr/esnext": "^1.1.0",
-    "@taskr/htmlmin": "^1.1.0",
-    "@taskr/postcss": "^1.1.2",
-    "@taskr/rev": "^1.1.0",
-    "@taskr/sass": "^1.1.0",
-    "@taskr/uglify": "^1.1.0",
-    "@taskr/watch": "^1.1.0",
-    "autoprefixer": "^8.0.0",
-    "browser-sync": "^2.23.6",
-    "rollup": "^0.59.1",
-    "rollup-plugin-buble": "^0.19.0",
-    "rollup-plugin-commonjs": "^9.0.0",
-    "rollup-plugin-node-resolve": "^3.0.2",
-    "rollup-plugin-replace": "^2.0.0",
-    "serve": "^9.3.0",
-    "taskr": "^1.1.0",
-    "taskr-standard": "^1.0.1",
-    "workbox-build": "^3.0.0"
+    "babel-eslint": "^9.0.0",
+    "workbox-build": "^3.5.0",
+    "workbox-cli": "^3.5.0",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "standard": "*"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/",
+      "build/"
+    ]
   },
   "dependencies": {
-    "hyperapp": "^1.2.5",
-    "rxjs": "^6.2.0"
+    "hyperapp": "^1.2.9",
+    "rxjs": "^6.3.2"
   }
 }
