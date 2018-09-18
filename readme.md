@@ -38,15 +38,3 @@ Open up application at http://localhost:4000/ in browser
 ````
 This will generate a release directory with your minified/rev'd assets.
 
-
-## serve static
-
-````bash
-    $ yarn run serve
-````
-
-This will use serve to statically serve your app from the release directory.
-
-## Credits
-
-The rollup and taskr config is based on https://github.com/tzellman/hyperapp-boilerplate
