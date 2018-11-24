@@ -9,3 +9,4 @@ node_modules
 # Compiled
 dist
 release
+.cache
