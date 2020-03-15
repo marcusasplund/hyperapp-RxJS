@@ -5,7 +5,7 @@ const log = console.log
 const logError = console.error
 const logWarn = console.warn
 let index = 0
-let logs = []
+const logs = []
 
 export const ShowConsole = () =>
   <fieldset id='console-log-div'>
@@ -16,7 +16,7 @@ export const ShowConsole = () =>
   </fieldset>
 
 const pushLogs = (a, type) => {
-  let args = Array.prototype.slice.call(a)
+  const args = Array.prototype.slice.call(a)
   for (var i = 0; i < args.length; i++) {
     logs.unshift({
       message: args[i],
