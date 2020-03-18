@@ -1,6 +1,6 @@
 # Hyperapp with RxJS
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/hyperapp-RxJS.svg)](https://greenkeeper.io/)
+
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-RxJS.svg)](https://github.com/marcusasplund/hyperapp-RxJS/issues)
 [![Build status](https://img.shields.io/travis/marcusasplund/hyperapp-RxJS.svg)](https://travis-ci.org/marcusasplund/hyperapp-RxJS)
 [![dependencies](https://img.shields.io/david/marcusasplund/hyperapp-RxJS.svg)](https://david-dm.org/marcusasplund/hyperapp-RxJS)
